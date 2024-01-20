@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apology</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    h1 {
+      color: #dd45f5; /* Red color for emphasis */
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #response {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>I'm Sorry My Mkpouto</h1>
+  <p>I realize I made a mistake, and I am truly sorry. I am also very sorry for my low-mood.</p>
+    <p>Will you forgive me?</p>
+  
+  <button onclick="response('Yes')">Yes</button>
+  <button onclick="response('No')">No</button>
+
+  <div id="response"></div>
+
+  <script>
+    function response(answer) {
+      var responseDiv = document.getElementById('response');
+      if (answer === 'Yes') {
+        responseDiv.innerHTML = '<p>Your response: ' + answer + '</p><img src="1.webp" alt="Bunny Kiss">';
+      } else {
+        responseDiv.innerHTML = '<p>Your response: ' + answer + '</p><img src="2.webp" alt="Broken heart">';
+      }
+    }
+  </script>
+</body>
+</html>
